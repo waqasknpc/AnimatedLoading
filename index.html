@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .signup{
+            box-shadow: 10px 10px 5px lightblue;
+            position: absolute;
+            width: 320px;
+            height: 220px;
+            z-index: 15;
+            top: 50%;
+            left: 50%;
+            margin: -100px 0 0 -150px;
+            /* margin-top: 200px; */
+            /* margin: 0 auto; */
+            /* width: 40vw; */
+            border: 3px solid black;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .form{
+            text-align: right;
+        }
+        button{
+            background-color: rgb(176, 197, 253);
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 2px 18px;
+            margin-top: 20px;
+        }
+        .button{
+            margin-right: 60px;
+        }
+        button:hover{
+            background-color: rgb(255, 98, 63);
+        }
+        label{
+            padding-right: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h1>Sigup</h1>
+        <div class="form">
+            <form method="post" action="Login.html">
+                <label for="Name">Name:
+                    <input type="text" required placeholder="Enter Your Name">
+                </label>
+                <br>
+                <label for="FName">Father Name: <input type="text" placeholder="Enter Your Father Name" required name="FName"></label>
+                <br>
+                <label for="MobileNo">Mobile No:
+                    <input type="number" required placeholder="E.g 03422233110">
+                </label>
+                <br>
+                <label for="email">Email:
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                </label>
+                <br>
+                <label for="email">Retype Email:
+                    <input type="email" name="email" placeholder="Retype Your Email" required>
+                </label>
+                <br>
+                <label for="password">
+                    Password: <input type="password" name="password" required>
+                </label>
+                <br>
+                <div class="button">
+                    <button type="submit">SignUp</button>
+                    <button type="reset">Reset</button>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
